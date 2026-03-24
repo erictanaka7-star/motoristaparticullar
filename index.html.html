@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+</head>
+<style>
+    body {
+        background-color: rgb(0, 4, 20);
+    }
+    .t {
+            color: aliceblue;
+            position: absolute;
+            top: 30%;
+            left: -50%;
+            font: normal 40pt arial black;
+            animation: pedir 1s ease forwards;
+            animation-delay: 7s;
+      }
+      @keyframes pedir {
+        0% {
+            transform: translateX(-20%);
+        }
+        100% {
+            transform: translateX(190%);
+        }
+      }
+      .l {
+        width: 400px;
+        padding: 50px;
+        position: fixed;
+        background-color: black;
+        transform: scaleY(150.0) scaleX(15.0);
+        z-index: 1;
+        animation: espaco 1.5s ease forwards;
+        opacity: 1;
+        animation-delay: 6s;
+      }
+      @keyframes espaco {
+        0% {
+            opacity: 1;
+        }
+        76% {
+            opacity: 0;
+        }
+        90% {
+            opacity: 0;
+        }
+        100% {
+            transform: scale(0.0);
+        }
+      }
+      .carro {
+        z-index: 2;
+        position: fixed;
+        top: 40%;
+        left: -120%;
+        width: 400px;
+        animation: carro 3.0s ease;
+      }
+      @keyframes carro {
+        0% {
+            transform: translateX(70%);
+        }
+        50% {
+            transform: translateX(170%);
+        }
+        100% {
+            transform: translateX(350%);
+        }
+      }
+      .t1 {
+        z-index: 2;
+        position: fixed;
+        top: 33%;
+        left: 20%;
+        color: gold;
+        font: normal 40pt italic;
+        animation: particular 2.0s ease forwards;
+        animation-delay: 3.0s;
+        opacity: 0;
+      }
+      @keyframes particular {
+        0% {
+            opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      70% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+    .box {
+        padding: 40px;
+        border: 2px solid gold;
+        width: 200px;
+        position: fixed;
+        left: 40%;
+        top: 93%;
+        background-color: rgb(0, 0, 32);
+        transform: scaleX(10.0);
+    }
+    .agora {
+          color: aliceblue;
+            position: absolute;
+            top: 36%;
+            left: -50%;
+            font: normal 40pt arial black;
+            animation: agora 1s ease forwards;
+            animation-delay: 7s;   
+    }
+    @keyframes agora {
+        0% {
+            transform: translateX(-20%);
+        }
+        100% {
+            transform: translateX(220%);
+        }
+    }
+    .pedirr {
+        font: normal 40pt arial black;
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        color: gold;
+        animation: pedirr 7.0s ease forwards;
+        opacity: 0;
+        animation-delay: 6s;
+        padding: 7px;
+        border-radius: 7px;
+        background-color: rgb(58, 49, 0);
+    }
+    @keyframes pedirr {
+        0% {
+            opacity: 0;
+        }  
+        50% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 1;
+        }  
+    }
+    .mo {
+        font: normal 35pt italic;
+        position: absolute;
+        top: 41%;
+        left: 24%;
+        z-index: 1;
+        color: gold;
+        animation: mo 4s ease;
+        opacity: 0;
+        animation-delay: 1.5s;
+    }
+    @keyframes mo {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        70% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    .c {
+        position: absolute;
+        top: 0%;
+        left: 25%;
+        width: 300px;
+        animation: car 1s ease forwards;
+        animation-delay: 6s;
+    }
+    @keyframes car {
+        0% {
+            transform: translateY(0%);
+        }
+        50% {
+            transform: translateY(96%);
+        }
+        100% {
+            transform: translateY(96%);
+        }
+    }
+</style>
+<body>
+    <h1 class="t">PEDIR</h1> 
+    <p class="l">espaço</p>
+    <img src="imagens/carro com roda mexendo.png" class="carro">
+    <h1 class="t1">PARTICULAR</h1>
+    <p class="box">.</p> 
+    <a href="pedir.html" class="pedirr">pedir</a>
+    <h1 class="agora">AGORA</h1>
+    <h1 class="mo">MOTORISTA</h1>
+    <img src="imagens/carro1.png" class="c">
+</body>
+</html>
